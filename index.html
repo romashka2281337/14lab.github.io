@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме Михаила Андреева</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="libs/html2pdf.bundle.min.js"></script>
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <div class="main" id="main">
+    <div class="head">
+      <img class="Avatar" src="images/avatar.jpg" alt="Фото Михаила Андреева">
+      <div class="nameBox">
+        <div class="greetingPhrase">Привет! Я</div>
+        <div class="yourInfo">
+          <div class="name" onclick="changetext(this)">Андреев Михаил</div>
+          <div class="role" onclick="changetext(this)">Младший разработчик</div>
+        </div>
+      </div>
+      <div class="languagesBox">
+        <div class="title">Языки:</div>
+        <div class="language" onclick="changeLanguage(this)">
+          Английский
+          <img class="engflag" src="images/eng-flag.svg" alt="Флаг Англии">
+        </div>
+        <div class="language" onclick="changeLanguage(this)">
+          Русский
+          <img class="rusflag" src="images/rus-flag.jpg" alt="Флаг России">
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="expBox">
+        <div class="title">Опыт</div>
+        <div class="exp" onclick="changetext(this)">
+          "Первый опыт в IT я получил на школьных олимпиадах по программированию. Позже в университете занимался созданием веб-приложений и работал над реальными проектами в рамках стажировки. Сейчас развиваю навыки разработки на Python и JavaScript."
+        </div>
+      </div>
+      <div class="toolsBox">
+        <div class="title">Навыки</div>
+        <ul>
+          <li onclick="changeLi(this)">Python</li>
+          <li onclick="changeLi(this)">JavaScript</li>
+          <li onclick="changeLi(this)">Django</li>
+          <li onclick="changeLi(this)">React</li>
+          <li onclick="changeLi(this)">Git</li>
+          <li onclick="changeLi(this)">SQL</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="educationBox">
+        <div class="title">Образование</div>
+        <div class="school" onclick="changetext(this)">Школа №12 г. Екатеринбург. Среднее общее</div>
+        <div class="school" onclick="changetext(this)">УрФУ Компьютерные науки. 3 курс</div>
+      </div>
+      <div class="interestsBox">
+        <div class="title">Интересы</div>
+        <ul>
+          <li onclick="changeLi(this)">Искусственный интеллект</li>
+          <li onclick="changeLi(this)">Киберспорт</li>
+          <li onclick="changeLi(this)">Настольные игры</li>
+          <li onclick="changeLi(this)">Футбол</li>
+        </ul>
+      </div>
+      <div class="contactBox">
+        <div class="title">Контакты</div>
+        <div class="contactText">Номер телефона:</div>
+        <div class="phoneNumber" onclick="changetext(this)">+7(912)345-67-89</div>
+        <div class="contactText">Почта:</div>
+        <div class="email" onclick="changetext(this)">m.andreev@example.com</div>
+      </div>
+    </div>
+    <div class="PDFbutton">
+      <button onclick="captureImage()">Скачать PDF</button>
+    </div>
+  </div>
+</body>
+</html>
